@@ -1,0 +1,13 @@
+clg
+graphsize(800,800)
+color red
+rect 50,50,150,150
+
+penwidth 10
+color blue, yellow
+rect 100,100,150,150
+
+color green, clear
+rect 10,130,280,40
+
+alert("click ok to continue")
