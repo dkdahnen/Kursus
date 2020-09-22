@@ -1,0 +1,25 @@
+ar_down=16777237
+ar_up=16777235
+ar_left=16777234
+ar_right=16777236
+
+fastgraphics
+x = 150
+y = 150
+color blue
+
+print "use arrows to move the ball, space to exit"
+
+while not keypressed(32)
+   if keypressed(ar_down) then y = y + 1
+   if keypressed(ar_up) then y = y - 1
+   if keypressed(ar_right) then x = x + 1
+   if keypressed(ar_left) then x = x - 1
+   # keep x and y in bounds 0-300
+   x = (x + 300) % 300
+   y = (y + 300) % 300
+   # draw ball
+   clg
+   circle x,y,10
+   refresh
+end while
