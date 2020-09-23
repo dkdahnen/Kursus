@@ -1,0 +1,17 @@
+# 100 random circles
+clg
+graphsize(800,800)
+for x = 1 to 100
+	call draw()
+	pause 1
+next x
+end
+
+function rnd(n)
+	rnd = int(rand*n)
+end function
+
+subroutine draw()
+	color rgb(rnd(256),rnd(256),rnd(256))
+	circle rnd(graphwidth), rnd(graphheight), rnd(graphwidth/10)
+end subroutine

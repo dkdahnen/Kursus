@@ -1,0 +1,3 @@
+p = int(rand() * 10)
+
+print "tal p er " + p

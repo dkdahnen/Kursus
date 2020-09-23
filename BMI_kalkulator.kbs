@@ -1,0 +1,25 @@
+print "indtast din vægt i kg ? "
+input vaegt
+print "din vægt er : " + vaegt + " kg"
+print "indtast din højde i M ? "
+input hojde
+print "din højde er " + hojde
+h2 = hojde * hojde
+bmi = vaegt / h2
+
+print " h2 er " + h2
+
+print "så er dit BMI " + bmi
+
+# BMI Categorization
+# The BMI statistical categories below are based on BMI scores and apply to adults of age 20 years and # upwards. The World Health Organisation (WHO) regards a healthy adult BMI to be between 18.5 and 25.
+
+# BMI	BMI Category
+# Less than 15	Very severely underweight
+# Between 15 and 16	Severely underweight
+# Between 16 and 18.5	Underweight
+# Between 18.5 and 25	Normal (healthy weight)
+# Between 25 and 30	Overweight
+# Between 30 and 35	Moderately obese
+# Between 35 and 40	Severely obese
+# Over 40	Very severely obese

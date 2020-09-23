@@ -1,0 +1,11 @@
+# flyt en cirkel
+
+clg
+color blue
+circle 100,100,10
+graphsize(500,500)
+
+for x=1 to 100
+  circle 100,x*3+100,5
+  pause 0.1
+next x
