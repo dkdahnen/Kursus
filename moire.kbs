@@ -1,0 +1,12 @@
+# moire diagram 
+graphvisible true
+# editvisible false
+graphsize 500,500
+clg
+color black
+for t = 0 to 300 step 2
+   line 0,0,t,300
+   line 0,0,300,t
+   pause(0.01)
+next t
+editvisible true
